@@ -5,7 +5,12 @@ This Java project is a tool for analyzing a special ride network created daily b
 
 ## Introduction
 
-As a software developer at Uber, you are tasked with verifying whether the daily ride network, represented as a directed graph, satisfies the conditions of being a tree. It is essential to ensure that the network structure is suitable for efficient ride operations.
+ Welcome to the Uber Ride Network Tree Validator program! As a software developer at Uber, your task is to determine whether a given directed graph representing the company's ride network can be considered a tree. To be a tree, the graph must satisfy the following conditions:
+
+- It must have one less edge than the number of vertices.
+- It must be connected.
+- There must be no cycles in the graph.
+
 
 ## Features
 
@@ -33,12 +38,20 @@ To use the Uber Ride Network Analysis tool, follow these steps:
 
 ## Input Format
 
-In the input, you will provide the following information:
+You must first enter the number of taxi pickups in the ride network. 
 
-- The number of vertices (N) representing ride network locations.
-- The number of edges (M) representing ride connections.
-- M lines containing edge information, each specifying a directed edge from one vertex to another.
+Then you should enter how many taxi rides there are connecting these taxi pickups. 
+
+Finally, you should specify line by line from which taxi pickup to which one can go.
+
+For example, in the first line, it is stated that there is a one-way departure from Çayyolu to Emek.
+
+<img width="844" alt="Screenshot 2023-11-06 at 23 16 48" src="https://github.com/sarparslan/Uber-Ride-Network-Tree/assets/96438389/d4507a41-9caa-4bc0-8b21-6a19f15d02b7">
+
+
 
 ## Output Format
 
 The output will indicate whether the provided directed graph meets the conditions of being a tree. It will also provide additional information about the analysis, such as whether it has one less edge than the number of vertices, is connected, and whether any cycles are present.
+
+<img width="806" alt="Screenshot 2023-11-06 at 23 17 02" src="https://github.com/sarparslan/Uber-Ride-Network-Tree/assets/96438389/3fa0ea8b-e4af-4b35-be30-529f32214273">
